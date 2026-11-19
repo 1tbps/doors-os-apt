@@ -1,34 +1,34 @@
 Package: doors-archive-keyring
 Source: doors-os
-Version: 0.2~dev3
+Version: 0.2~dev6
 Architecture: all
 Maintainer: Doors OS Project <noreply@doors-os.invalid>
 Installed-Size: 15
 Priority: optional
 Section: misc
-Filename: pool/main/d/doors-os/doors-archive-keyring_0.2~dev3_all.deb
-Size: 2240
-SHA256: 375f4844aea1276c022e2b7a295811e4f28cb5982ba8286d11910b1ca4280a1b
-SHA1: b3c5610b88a0981e8850513af8c58b06530199b9
-MD5sum: da2918b652ea875b953025d8705e0dd0
+Filename: pool/main/d/doors-os/doors-archive-keyring_0.2~dev6_all.deb
+Size: 2584
+SHA256: 90cc1535c2dd45b599ffcd16f515bfbfec2f8929b2b4e9178b9780d3108eca15
+SHA1: b1d83a067c2361496a622e4ecb622a43e461a6aa
+MD5sum: fc993b982b592727604d75964ca6c6d5
 Description: chave e origem APT do Doors OS
  Instala a chave pública de assinatura do repositório do Doors OS e a
  configuração APT (deb822) que aponta para ele.
 
 Package: doors-artwork
 Source: doors-os
-Version: 0.2~dev3
+Version: 0.2~dev6
 Architecture: all
 Maintainer: Doors OS Project <noreply@doors-os.invalid>
-Installed-Size: 80
+Installed-Size: 1350
 Depends: desktop-base
 Priority: optional
 Section: misc
-Filename: pool/main/d/doors-os/doors-artwork_0.2~dev3_all.deb
-Size: 8212
-SHA256: 22b21dfc893fdb44133084795d16444e523cd1d7425ceea1f9c4e4a8d345eca2
-SHA1: ded483a17a7236cdca29cd9d8527cdb3e80b21ef
-MD5sum: d05d57fdd6959035416f2a1068c5b363
+Filename: pool/main/d/doors-os/doors-artwork_0.2~dev6_all.deb
+Size: 590452
+SHA256: db72aef46caf5b48c346e1369a1914006aba9374abc4a254d15d81978f3b7d36
+SHA1: 6567febe70daff240f1ae0a79ac85d7622814136
+MD5sum: ab3dd35d1a67469493fc98ee794776ba
 Description: tema visual do Doors OS
  Papéis de parede, tela de bloqueio, fundo de login e GRUB do Doors OS,
  registrados como tema do desktop-base, além do logo da tela de login (SDDM)
@@ -36,19 +36,39 @@ Description: tema visual do Doors OS
 
 Package: doors-release
 Source: doors-os
-Version: 0.2~dev3
+Version: 0.2~dev6
 Architecture: all
 Maintainer: Doors OS Project <noreply@doors-os.invalid>
 Installed-Size: 12
 Depends: base-files, doors-archive-keyring
 Priority: optional
 Section: misc
-Filename: pool/main/d/doors-os/doors-release_0.2~dev3_all.deb
-Size: 2144
-SHA256: d496d18802e743347e8de76d9e36ae02b95264f1b5b9f9626dffe46645f67d1b
-SHA1: 21c67a63c55c00d8ae88c9459e2be93260336b4e
-MD5sum: 0f2c775323c064752b124f6ae637ee84
+Filename: pool/main/d/doors-os/doors-release_0.2~dev6_all.deb
+Size: 2500
+SHA256: 98b37a3594f6d556ec6ad1e5bf2690dfd8f68a94a4d8a01be121a758ba5ffd7a
+SHA1: 82bb0079fe9e127382d8489ded93bb95ef68c752
+MD5sum: 2a28aaac87f6a5de99d95432c626cd00
 Description: identificação do sistema Doors OS
  Fornece /usr/lib/os-release com o nome e a versão do Doors OS,
  desviando (dpkg-divert) o arquivo do base-files do Debian.
+
+Package: doors-xfce-settings
+Source: doors-os
+Version: 0.2~dev6
+Architecture: all
+Maintainer: Doors OS Project <noreply@doors-os.invalid>
+Installed-Size: 31
+Depends: doors-artwork, xfce4-panel, xfce4-settings, xfwm4, greybird-gtk-theme, elementary-xfce-icon-theme, fonts-noto-core, xfce4-whiskermenu-plugin, xfce4-pulseaudio-plugin, xfce4-notifyd
+Priority: optional
+Section: misc
+Filename: pool/main/d/doors-os/doors-xfce-settings_0.2~dev6_all.deb
+Size: 4612
+SHA256: a7e35a5e8d32c12316c920faf12c11b1fbb63f5d9b1ce073ef1261c21ea93291
+SHA1: 9ab98f2db4b6296d371047f5b59bd2a742f8e9fe
+MD5sum: d30690087f701882ed6842e676aeba5c
+Description: aparência padrão do Doors OS para o XFCE
+ Painel único na parte de baixo (menu Whisker, atalhos, lista de janelas,
+ bandeja e relógio), tema de janelas e controles Greybird, ícones
+ elementary-xfce, fontes Noto Sans e tela de login no mesmo estilo.
+ Vale para novos usuários; quem já tem configuração própria não é alterado.
 
