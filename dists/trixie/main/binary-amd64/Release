@@ -1,0 +1,6 @@
+Archive: trixie
+Component: main
+Origin: Doors OS
+Label: Doors OS
+Architecture: amd64
+Description: Pacotes próprios do Doors OS

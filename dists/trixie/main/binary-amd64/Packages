@@ -1,0 +1,54 @@
+Package: doors-archive-keyring
+Source: doors-os
+Version: 0.2~dev3
+Architecture: all
+Maintainer: Doors OS Project <noreply@doors-os.invalid>
+Installed-Size: 15
+Priority: optional
+Section: misc
+Filename: pool/main/d/doors-os/doors-archive-keyring_0.2~dev3_all.deb
+Size: 2240
+SHA256: 375f4844aea1276c022e2b7a295811e4f28cb5982ba8286d11910b1ca4280a1b
+SHA1: b3c5610b88a0981e8850513af8c58b06530199b9
+MD5sum: da2918b652ea875b953025d8705e0dd0
+Description: chave e origem APT do Doors OS
+ Instala a chave pública de assinatura do repositório do Doors OS e a
+ configuração APT (deb822) que aponta para ele.
+
+Package: doors-artwork
+Source: doors-os
+Version: 0.2~dev3
+Architecture: all
+Maintainer: Doors OS Project <noreply@doors-os.invalid>
+Installed-Size: 80
+Depends: desktop-base
+Priority: optional
+Section: misc
+Filename: pool/main/d/doors-os/doors-artwork_0.2~dev3_all.deb
+Size: 8212
+SHA256: 22b21dfc893fdb44133084795d16444e523cd1d7425ceea1f9c4e4a8d345eca2
+SHA1: ded483a17a7236cdca29cd9d8527cdb3e80b21ef
+MD5sum: d05d57fdd6959035416f2a1068c5b363
+Description: tema visual do Doors OS
+ Papéis de parede, tela de bloqueio, fundo de login e GRUB do Doors OS,
+ registrados como tema do desktop-base, além do logo da tela de login (SDDM)
+ e do papel de parede padrão do XFCE.
+
+Package: doors-release
+Source: doors-os
+Version: 0.2~dev3
+Architecture: all
+Maintainer: Doors OS Project <noreply@doors-os.invalid>
+Installed-Size: 12
+Depends: base-files, doors-archive-keyring
+Priority: optional
+Section: misc
+Filename: pool/main/d/doors-os/doors-release_0.2~dev3_all.deb
+Size: 2144
+SHA256: d496d18802e743347e8de76d9e36ae02b95264f1b5b9f9626dffe46645f67d1b
+SHA1: 21c67a63c55c00d8ae88c9459e2be93260336b4e
+MD5sum: 0f2c775323c064752b124f6ae637ee84
+Description: identificação do sistema Doors OS
+ Fornece /usr/lib/os-release com o nome e a versão do Doors OS,
+ desviando (dpkg-divert) o arquivo do base-files do Debian.
+
