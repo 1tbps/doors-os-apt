@@ -1,72 +1,74 @@
 Package: doors-aparencia
-Version: 0.1.1
+Version: 0.3.5
 Architecture: amd64
 Maintainer: Doors OS Project <noreply@doors-os.invalid>
-Installed-Size: 558
-Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.54.0), libgtk-4-1 (>= 4.0.0), doors-artwork, libglib2.0-bin
+Installed-Size: 625
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.2.4), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.54.0), libgtk-4-1 (>= 4.9.2), doors-artwork, libglib2.0-bin
 Recommends: greybird-gtk-theme
 Priority: optional
 Section: x11
-Filename: pool/main/d/doors-aparencia/doors-aparencia_0.1.1_amd64.deb
-Size: 218808
-SHA256: f2c4370d78c14b3a7f5e19e58d6ffbd0b7ee4afa3a7b0f7a40b98a9959e44e0b
-SHA1: 687803537943138b92121217db2341de58034ea0
-MD5sum: 151a145441ac9583c56158a41849e175
+Filename: pool/main/d/doors-aparencia/doors-aparencia_0.3.5_amd64.deb
+Size: 240760
+SHA256: 8105e228a44e138c98e1574423083dbe3a3d0b922040fab748d1cb3048346a63
+SHA1: fe6778e2ec7499c930f867622f092642f266ec61
+MD5sum: 97c2176212469aa0d92169dcf2185a19
 Description: Doors Aparência: personalização do Doors OS em um clique
- Aplicativo (Rust + GTK4) para escolher tema claro ou escuro, cor de
- destaque, posição do painel e papel de parede no KDE Plasma, no Cinnamon
- e no XFCE. Cada clique aplica na hora.
+ Aplicativo (Rust + GTK4), no estilo do Zorin Appearance, para escolher
+ tema claro ou escuro, cor de destaque, papel de parede, layout do painel e
+ tamanho do texto no KDE Plasma, no Cinnamon, no XFCE e no GNOME.
 
 Package: doors-aparencia-dbgsym
 Source: doors-aparencia
-Version: 0.1.1
+Version: 0.3.5
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Doors OS Project <noreply@doors-os.invalid>
-Installed-Size: 210
-Depends: doors-aparencia (= 0.1.1)
+Installed-Size: 226
+Depends: doors-aparencia (= 0.3.5)
 Priority: optional
 Section: debug
-Filename: pool/main/d/doors-aparencia/doors-aparencia-dbgsym_0.1.1_amd64.deb
-Size: 26356
-SHA256: b43b057d60e368aea69c819037623aaf3e253ec0979742fcad201f7c60babe56
-SHA1: 1a357d5d30e1a31c38db2fd4605773408011ab0d
-MD5sum: 28dc03f19d481a17276c53edf27266d4
+Filename: pool/main/d/doors-aparencia/doors-aparencia-dbgsym_0.3.5_amd64.deb
+Size: 27968
+SHA256: bab1efea6187421fc8bccf00334822df0587dd665659ef103ddabea4dec11c3f
+SHA1: 3f525a8d0c04908de436660e8632acb7dd9b972c
+MD5sum: f5a4b0eddb6b4fec2a8290c8e8a162b4
 Description: debug symbols for doors-aparencia
-Build-Ids: 0c93b38306f29ff95cd5c507f63e6e91af615474
+Build-Ids: da48b0d4f0f394208dba833b732200b52d018d4a
 
 Package: doors-archive-keyring
 Source: doors-os
-Version: 0.3
+Version: 0.4~rc2
 Architecture: all
 Maintainer: Doors OS Project <noreply@doors-os.invalid>
-Installed-Size: 17
+Installed-Size: 19
 Priority: optional
 Section: misc
-Filename: pool/main/d/doors-os/doors-archive-keyring_0.3_all.deb
-Size: 4036
-SHA256: bc59e07d1b8763d27f5e2bbe0139c7801795462f36c7a66a48dc050b3c640ca2
-SHA1: 85eaf0c6326c855c3b460193a39f6ae135bdda11
-MD5sum: d10ee55d4776d5224378b3e83e732766
+Filename: pool/main/d/doors-os/doors-archive-keyring_0.4~rc2_all.deb
+Size: 6716
+SHA256: 4eeb0f5fe2a2046859724ff1c2d27412fc02f7302c5ff60075ae6357e9fcc0a5
+SHA1: 74d312fec3f3f47131d832ce11069a84604bb0f1
+MD5sum: 569a1dc48e249871abe4d58995198892
 Description: chave e origem APT do Doors OS
  Instala a chave pública de assinatura do repositório do Doors OS e a
  configuração APT (deb822) que aponta para ele.
 
 Package: doors-artwork
 Source: doors-os
-Version: 0.3
+Version: 0.4~rc2
 Architecture: all
 Maintainer: Doors OS Project <noreply@doors-os.invalid>
-Installed-Size: 12305
-Depends: desktop-base
+Installed-Size: 16613
+Depends: desktop-base, dconf-cli
 Recommends: elementary-xfce-icon-theme, greybird-gtk-theme, plasma-workspace-wallpapers, gnome-backgrounds
+Breaks: doors-gnome-settings (<< 0.4~dev9)
+Replaces: doors-gnome-settings (<< 0.4~dev9)
 Priority: optional
 Section: misc
-Filename: pool/main/d/doors-os/doors-artwork_0.3_all.deb
-Size: 11756312
-SHA256: 5e759b8b2ef9a59fd047c56b4f71912c742e6ba5cacdc8b16d64150a778dd1ad
-SHA1: 5427141c6f0c3068d8a37fdd9ccb2c3b37a84880
-MD5sum: 3fc88e3ff2cf6ff9e972d22a4f2d30e7
+Filename: pool/main/d/doors-os/doors-artwork_0.4~rc2_all.deb
+Size: 16042552
+SHA256: 41f7fb725a8c9ec8acc1fd16de4a35a7851fc3c2b2130547a8142265aa7eeca5
+SHA1: 31a9246ac4175f719c4cc41df881579a30e0e473
+MD5sum: 06440e0af02aab21f740ddeb21689632
 Description: tema visual do Doors OS
  Papéis de parede, tela de bloqueio, fundo de login e GRUB do Doors OS,
  registrados como tema do desktop-base, além do logo da tela de login (SDDM)
@@ -74,77 +76,196 @@ Description: tema visual do Doors OS
 
 Package: doors-cinnamon-settings
 Source: doors-os
-Version: 0.3
+Version: 0.4~rc2
 Architecture: all
 Maintainer: Doors OS Project <noreply@doors-os.invalid>
-Installed-Size: 13
-Depends: dconf-gsettings-backend | gsettings-backend, doors-artwork, cinnamon, greybird-gtk-theme, elementary-xfce-icon-theme, fonts-noto-core
+Installed-Size: 155
+Depends: dconf-gsettings-backend | gsettings-backend, doors-artwork, dconf-cli, cinnamon, greybird-gtk-theme, elementary-xfce-icon-theme, fonts-noto-core
 Recommends: plasma-workspace-wallpapers, gnome-backgrounds
 Priority: optional
 Section: misc
-Filename: pool/main/d/doors-os/doors-cinnamon-settings_0.3_all.deb
-Size: 4024
-SHA256: 5705195b453865be9ac5d640fda387bb5371a0c60ff8badf53cad3c43a87f015
-SHA1: e59ee7c458630e1d62fc5bba3f2c36ebf7d48d8d
-MD5sum: 60341eb4f2b8764584357cbbcb1a27ab
+Filename: pool/main/d/doors-os/doors-cinnamon-settings_0.4~rc2_all.deb
+Size: 30736
+SHA256: cb46155987d351ef17234958ca51e21059bbbcb4f8109260bc050906772b2561
+SHA1: 809b591d1ad2bc4f635618cec4116077f5b55e9a
+MD5sum: 68c2fcfdc90a4262c2fbfc834574a3b0
 Description: aparência padrão do Doors OS para o Cinnamon
  Janelas Greybird (estilo Xubuntu/MX Linux) com o contorno da janela ativa
  em azul, ícones elementary-xfce e fontes Noto Sans. O painel embaixo no
  estilo do Linux Mint é o padrão do Cinnamon. Vale para novos usuários.
 
-Package: doors-kde-settings
-Source: doors-os
-Version: 0.3
+Package: doors-digitacao
+Version: 0.2.0
+Architecture: amd64
+Maintainer: Doors OS Project <noreply@doors-os.invalid>
+Installed-Size: 680
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.2.4), libgcc-s1 (>= 4.2), libglib2.0-0t64 (>= 2.54.0), libgtk-4-1 (>= 4.0.0), fonts-noto-core
+Recommends: x11-xkb-utils
+Priority: optional
+Section: education
+Filename: pool/main/d/doors-digitacao/doors-digitacao_0.2.0_amd64.deb
+Size: 260260
+SHA256: e77a0b3645b0d5f825ccb87d97837ad9b9dad5709321d311b5a9f8c1514e4d2c
+SHA1: 3696a99f7d23a5027c465e5289537bbf273ae8d2
+MD5sum: 947a05872d490ee1b9e5313789326d29
+Description: Doors Digitação: curso de digitação em português
+ Aplicativo do Doors OS (Rust + GTK4) para aprender a digitar, todo em
+ português do Brasil: lições em sequência (fileira do meio, de cima, de baixo,
+ maiúsculas, acentos, números e pontuação), teclado na tela mostrando o dedo
+ certo, teste de velocidade (PPM e precisão), jogo de palavras caindo,
+ estrelas, pontos e níveis. Detecta o layout do teclado (ABNT2, inglês
+ internacional com teclas mortas ou inglês dos EUA) e permite trocar.
+
+Package: doors-digitacao-dbgsym
+Source: doors-digitacao
+Version: 0.2.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Doors OS Project <noreply@doors-os.invalid>
+Installed-Size: 259
+Depends: doors-digitacao (= 0.2.0)
+Priority: optional
+Section: debug
+Filename: pool/main/d/doors-digitacao/doors-digitacao-dbgsym_0.2.0_amd64.deb
+Size: 29856
+SHA256: c9435cdb45319a24f37a8373dffe7d31540e983bce7d32cf3312b0b1a57b62fe
+SHA1: ec2273412301e4424d78b85cb94cab60dd2e30e9
+MD5sum: 2053507c7487d251022df567ae068a56
+Description: debug symbols for doors-digitacao
+Build-Ids: 25211e553b7252ba865513ce82876a4d93d1d379
+
+Package: doors-gnome-cantos
+Version: 12+doors2
 Architecture: all
 Maintainer: Doors OS Project <noreply@doors-os.invalid>
-Installed-Size: 146
-Depends: doors-artwork, plasma-desktop, kwin-x11 | kwin-wayland, breeze, elementary-xfce-icon-theme
+Installed-Size: 244
+Depends: gnome-shell (>= 46), gnome-shell (<< 49)
+Homepage: https://github.com/flexagoon/rounded-window-corners
+Priority: optional
+Section: gnome
+Filename: pool/main/d/doors-gnome-cantos/doors-gnome-cantos_12+doors2_all.deb
+Size: 30716
+SHA256: 7fa2535cdc54b22ea27214fd7a703e12411ecc730a22279f86cd7bc8f8d3a893
+SHA1: ed326c3c1093833cbcf0da79544e07ee98258f89
+MD5sum: 56254f19a9968bdf895636a1378d7784
+Description: cantos arredondados e borda colorida nas janelas do GNOME (Doors OS)
+ Extensão do GNOME Shell "Rounded Window Corners Reborn" (versão 12, de
+ flexagoon e colaboradores), compilada para o GNOME 48 do Doors OS.
+ Arredonda os quatro cantos de todas as janelas e desenha uma borda; no
+ Doors, a borda fica na cor de destaque só na janela ativa.
+
+Package: doors-gnome-settings
+Source: doors-os
+Version: 0.4~rc2
+Architecture: all
+Maintainer: Doors OS Project <noreply@doors-os.invalid>
+Installed-Size: 25
+Depends: dconf-gsettings-backend | gsettings-backend, doors-artwork, doors-gnome-cantos, gnome-shell, dconf-cli
+Recommends: gnome-backgrounds
+Priority: optional
+Section: misc
+Filename: pool/main/d/doors-os/doors-gnome-settings_0.4~rc2_all.deb
+Size: 8208
+SHA256: ba6bf1bbff90d8bf3117cfda76a9455b4d696cd1148a54770f3f03b16480f584
+SHA1: 95d8f7ef818de98c6e8e4959154e68da97992b9d
+MD5sum: 4b9e6baf1e144fa984057691859a71a5
+Description: aparência padrão do Doors OS para o GNOME
+ O GNOME do jeito do GNOME (barra no topo, visão geral e dock), com os
+ papéis de parede do Doors e as janelas com cantos arredondados e borda
+ na cor de destaque na janela ativa (doors-gnome-cantos). Vale para
+ novos usuários.
+
+Package: doors-kde-settings
+Source: doors-os
+Version: 0.4~rc2
+Architecture: all
+Maintainer: Doors OS Project <noreply@doors-os.invalid>
+Installed-Size: 158
+Depends: doors-artwork, doors-kwin-cantos, plasma-desktop, kwin-x11 | kwin-wayland, breeze, elementary-xfce-icon-theme
 Recommends: plasma-workspace-wallpapers, kdeplasma-addons-data
 Priority: optional
 Section: misc
-Filename: pool/main/d/doors-os/doors-kde-settings_0.3_all.deb
-Size: 121204
-SHA256: fb09c6f73df725b245a1a91d200ffa59220d4af9529f081540b4f80c129331aa
-SHA1: 4ad72e8226abf28d6a98c27e5a7b536951a809c5
-MD5sum: e5dc0e47840177924f32691d0a722f9e
+Filename: pool/main/d/doors-os/doors-kde-settings_0.4~rc2_all.deb
+Size: 124768
+SHA256: 94f7c8c08d65dbecb992e172494869f49d6b6eeec7ef071cdff86a1e5b3f16c3
+SHA1: a4a36bace1fec75e845e062ec37dbe631feeab97
+MD5sum: 3ec163c23d192c97cb47dbe873863635
 Description: aparência padrão do Doors OS para o KDE Plasma
  Painel único na parte de baixo no estilo do Linux Mint (menu, atalhos,
  janelas abertas, bandeja e relógio), janelas claras com a barra de título
  e as bordas da janela ativa em azul, ícones elementary-xfce (os mesmos do
  Xubuntu) e o esquema de cores "Doors Claro". Vale para novos usuários.
 
+Package: doors-kwin-cantos
+Version: 0.11.0
+Architecture: amd64
+Maintainer: Doors OS Project <noreply@doors-os.invalid>
+Installed-Size: 438
+Depends: libc6 (>= 2.35), libepoxy0 (>= 1.0), libkf6configcore6 (>= 6.0.0), libkf6configgui6 (>= 6.0.0), libkf6coreaddons6 (>= 6.0.0), libkf6i18n6 (>= 6.0.0), libkf6kcmutils6 (>= 6.0.0), libkf6kcmutilscore6 (>= 6.0.0), libkf6widgetsaddons6 (>= 6.0.0), libkwin6 (>= 4:6.3.6), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.4.0), libqt6gui6 (>= 6.4.0), libqt6widgets6 (>= 6.1.2), libstdc++6 (>= 11), kwin-common (>= 4:6.3), kwin-common (<< 4:6.4)
+Homepage: https://github.com/matinlotfali/KDE-Rounded-Corners
+Priority: optional
+Section: kde
+Filename: pool/main/d/doors-kwin-cantos/doors-kwin-cantos_0.11.0_amd64.deb
+Size: 91852
+SHA256: 6c6b066af0d459d3c580d9680a8b1c24c225c9aee210fe8175c2e7644e32c529
+SHA1: 5241cda5a6fe8af57bc7872e33b946cd8b996a86
+MD5sum: 5d1616ccaf08482a4e7154997c4eb524
+Description: cantos arredondados e contorno colorido nas janelas do KDE (Doors OS)
+ Efeito do KWin "Rounded Corners" (KDE-Rounded-Corners 0.11.0, de Matin
+ Lotfaliei e colaboradores), compilado para o KDE Plasma 6.3 do Doors OS.
+ Arredonda os quatro cantos das janelas e desenha um contorno na cor de
+ destaque, com brilho, na janela ativa.
+
+Package: doors-kwin-cantos-dbgsym
+Source: doors-kwin-cantos
+Version: 0.11.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Doors OS Project <noreply@doors-os.invalid>
+Installed-Size: 3030
+Depends: doors-kwin-cantos (= 0.11.0)
+Priority: optional
+Section: debug
+Filename: pool/main/d/doors-kwin-cantos/doors-kwin-cantos-dbgsym_0.11.0_amd64.deb
+Size: 2981056
+SHA256: f733d174208f68dd2e1d8072d9796df0394734f1f155b8d235cc7056383b7c35
+SHA1: e9c65b549e86c7575a2b5e25234903310fcbffd0
+MD5sum: 35a53bea883ace250a4666c71b7f01e9
+Description: debug symbols for doors-kwin-cantos
+Build-Ids: 9648fd02964c6075dc24c998f922ce08317f80e2 c4546b212c7f5442fb5098bcdbf3f1a791b0a9c1
+
 Package: doors-release
 Source: doors-os
-Version: 0.3
+Version: 0.4~rc2
 Architecture: all
 Maintainer: Doors OS Project <noreply@doors-os.invalid>
-Installed-Size: 15
+Installed-Size: 30
 Depends: base-files, doors-archive-keyring
 Priority: optional
 Section: misc
-Filename: pool/main/d/doors-os/doors-release_0.3_all.deb
-Size: 4044
-SHA256: ef392db470efc5c6847a5eb402e9ec6de48ab9adfd84e1a5772173182e0e196b
-SHA1: 942d0edf1977646e9b6a700bbab3e67ae6336475
-MD5sum: 1395e3f4e02ec432c98396827567b420
+Filename: pool/main/d/doors-os/doors-release_0.4~rc2_all.deb
+Size: 7488
+SHA256: 1dfe91255b90b2f5efc909a7a3bb946013d4cd126b83522e61781065e82f3174
+SHA1: 782684114a9956d908c57b452a4bd59807a09bdf
+MD5sum: d6c33a86826211c14cb0857d9e4f77c4
 Description: identificação do sistema Doors OS
  Fornece /usr/lib/os-release com o nome e a versão do Doors OS,
  desviando (dpkg-divert) o arquivo do base-files do Debian.
 
 Package: doors-xfce-settings
 Source: doors-os
-Version: 0.3
+Version: 0.4~rc2
 Architecture: all
 Maintainer: Doors OS Project <noreply@doors-os.invalid>
-Installed-Size: 33
+Installed-Size: 42
 Depends: doors-artwork, xfce4-panel, xfce4-settings, xfwm4, greybird-gtk-theme, elementary-xfce-icon-theme, fonts-noto-core, xfce4-whiskermenu-plugin, xfce4-pulseaudio-plugin, xfce4-notifyd
 Priority: optional
 Section: misc
-Filename: pool/main/d/doors-os/doors-xfce-settings_0.3_all.deb
-Size: 6076
-SHA256: a3e40dab1b3aabe698625a12f88e7acee1361c30efeaf9f78b8aaf3d89befef3
-SHA1: cef1a08b6e5a3be862a8563694a5877b20561df2
-MD5sum: fa6462d275c75d49f19aaa89e11005c4
+Filename: pool/main/d/doors-os/doors-xfce-settings_0.4~rc2_all.deb
+Size: 10156
+SHA256: 82bb8f38dfc93c6e76ca981ca9f19d8b49e29fac9d2c24a3d2d8b1aa954ce999
+SHA1: e6bdc31e45c6f7b9dca7e03c6d719c27a4507aac
+MD5sum: 497ba90e56a8a24491b2c03677777d1b
 Description: aparência padrão do Doors OS para o XFCE
  Painel único na parte de baixo (menu Whisker, atalhos, lista de janelas,
  bandeja e relógio), tema de janelas e controles Greybird, ícones
