@@ -2,19 +2,19 @@ Origin: Doors OS
 Label: Doors OS
 Suite: trixie
 Codename: trixie
-Date: Wed, 25 Nov 2026 17:29:30 UTC
+Date: Thu, 26 Nov 2026 00:09:02 UTC
 Architectures: amd64
 Components: main
 Description: Pacotes próprios do Doors OS
 MD5Sum:
- f99974ac204466a6381fb2b91a746512 11946 main/binary-amd64/Packages
- 6f9633cb500d6f8ba43f41f7fd704f75 4238 main/binary-amd64/Packages.gz
+ ec31eaada5c4d5260f9b1daa9ced7476 14171 main/binary-amd64/Packages
+ a8a5ccc03df831abc6305ad7c4354cca 5176 main/binary-amd64/Packages.gz
  a3fd0a41b12439e4688f2e44b1260190 128 main/binary-amd64/Release
 SHA1:
- c395d09358996eca82308f064c477c34f522f603 11946 main/binary-amd64/Packages
- ff0b52debb30a02eaf7ec9eeaec2cbf07563122c 4238 main/binary-amd64/Packages.gz
+ 5cbb4971792baed90e1882d4a81cbe8205d3cfed 14171 main/binary-amd64/Packages
+ c17d6c2c039cedff33c4298303c3d46281729f6c 5176 main/binary-amd64/Packages.gz
  0d201da8afadd10292815c44a69fde794d03d5f4 128 main/binary-amd64/Release
 SHA256:
- 9bf9cc3355adfe34a3dcb00cd66b00c2bac750c93688823938bc7f158c9a0763 11946 main/binary-amd64/Packages
- b2c49a7d3ae1c05ee2e55bf2afe3ac783c7be4f4c8185ddb2be48a165218d6a3 4238 main/binary-amd64/Packages.gz
+ cec163620b9c58ac4a43aa8dbe9583734fc16b70caebe1c2909e5e855a887b67 14171 main/binary-amd64/Packages
+ d71c818844f2902d44c386e1a6bc436f91befaa3f788c62d9c679690d79dcb9b 5176 main/binary-amd64/Packages.gz
  aa5ad33284354917bd88e4fdba734e32cc30b7ce60199face6fb6c8b36b17f09 128 main/binary-amd64/Release
